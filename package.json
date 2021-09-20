@@ -1,0 +1,17 @@
+{
+    "name": "foo",
+    "version": "1.2.3",
+    "description": "A package for fooing things",
+    "main": "foo.js",
+    "keywords": [
+      "foo",
+      "fool",
+      "foolish"
+    ],
+    "author": "John Doe",
+    "licence": "ISC",
+  
+    "scripts": {
+      "start" : "node server.js"
+    }
+  }
