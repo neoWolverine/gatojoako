@@ -3,5 +3,8 @@ var http = require('http');
 
 http.createServer(function (req, res) {
   res.writeHead(200, {'Content-Type': 'text/html'});
-  res.end('Hello World!');
-}).listen(PORT);
+  res.write(req.url);
+  res.end();
+  
+})
+.listen(PORT);
