@@ -10,10 +10,14 @@ http
 
 
     if (req.url.lastIndexOf("juega") !== -1) {
-      res.write("Prueba prros");
- 
-    }else{
-      res.write("Que pedooooo");
+      // res.write("A jugar papus");
+      var inicio = req.url.lastIndexOf("juega") + 5;
+      var fin = inicio + 49;
+      var texto = req.url;
+      texto = texto.substring(inicio,fin);
+
+    } else {
+      res.write("Oh nooooo");
     }
     res.end();
   })
