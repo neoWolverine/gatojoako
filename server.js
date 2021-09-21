@@ -9,7 +9,7 @@ http
 
 
 
-    if (req.url.lastIndexOf("juega")) {
+    if (req.url.lastIndexOf("juega") !== -1) {
       res.write("Prueba prros");
  
     }else{
