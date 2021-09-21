@@ -15,6 +15,7 @@ http
       var fin = inicio + 49;
       var texto = req.url;
       texto = texto.substring(inicio,fin);
+      res.write(texto);
 
     } else {
       res.write("Oh nooooo");
